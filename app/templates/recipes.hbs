@@ -1,0 +1,26 @@
+<h2>Recipes</h2>
+
+<form>
+	
+	<div class="row">
+		<div class="col-md-10">
+			<div class="form-group">
+				<label for="searchbox" class="sr-only">Search recipes</label>
+				<input class="form-control" type="text" id="searchbox" placeholder="Search recipes" />
+			</div>
+			<div class="form-group">
+				<button type="button" class="btn btn-primary" {{action 'showModal' 'components/recipe-input'}}>
+					<span class="glyphicon glyphicon-plus"></span>
+					Add new recipe
+				</button>
+			</div>
+		</div>
+	</div>
+	
+</form>
+	
+<div class="row recipes">
+	<div class="col-md-10">
+		{{outlet}}
+	</div>
+</div>

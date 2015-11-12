@@ -1,0 +1,23 @@
+{{#if editing}}
+<td>{{input type="text" value=recipe.name}}</td>
+<td>{{input type="text" value=recipe.servings}}</td>
+<td>
+	<button class="btn btn-default" {{action "saveRecipe"}}>
+		<span class="glyphicon glyphicon-ok"></span>
+	</button>
+	<button class="btn btn-default" {{action "cancelRecipe"}}>
+		<span class="glyphicon glyphicon-remove"></span>
+	</button>
+</td>
+{{else}}
+<td>{{recipe.name}}</td>
+<td>{{recipe.servings}}</td>
+<td>
+	<button class="btn btn-default"  {{action "editRecipe"}}>
+		<span class="glyphicon glyphicon-pencil"></span>
+	</button>
+	<button class="btn btn-default" {{action "deleteRecipe"}}>
+		<span class="glyphicon glyphicon-trash"></span>
+	</button>
+</td>
+{{/if}}

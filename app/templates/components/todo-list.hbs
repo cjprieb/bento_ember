@@ -1,0 +1,32 @@
+<form id="main">
+	{{!-- The actual list content will go here - it may be different
+	depending on filters and such --}}
+	{{yield}}
+	
+	<div class="form-group" id="todo-list">
+		<div class="input-group checkbox">
+	       <input type="checkbox" id="toggle-all">
+		</div>
+	</div>
+</form>
+
+<footer id="footer">  
+    <span id="todo-count">
+        <strong>2</strong> todos left
+    </span>
+    <ul id="filters">
+        <li>
+            <a href="all" class="selected">All</a>
+        </li>
+        <li>
+            <a href="active">Active</a>
+        </li>
+        <li>
+            <a href="completed">Completed</a>
+        </li>
+    </ul>
+
+    <button id="clear-completed">
+        Clear completed (1)
+    </button>
+</footer>  

@@ -1,0 +1,13 @@
+{{#modal-dialog title="test title" okButton="Save" ok="saveRecipe" close="removeModal" model=model}}
+<form class="">
+	{{log record}}
+	<div class="form-group">
+		<label for="txtName">Name</label>
+		{{input id="txtName" class="form-control" value=model.name}}
+	</div>
+	<div class="form-group">
+		<label for="txtServings">Servings</label>
+		{{input type="number" id="txtServings" class="form-control" value=model.servings}}
+	</div>
+</form>
+{{/modal-dialog}}

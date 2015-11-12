@@ -1,0 +1,8 @@
+{{#modal-dialog title="Todo Input" okButton="Save" ok="saveTodo" close="removeModal" model=model}}
+<form>
+	<div class="form-group">
+		<label for="txtName">Title</label>
+		{{input id="txtName" class="form-control" value=model.title}}
+	</div>
+</form>
+{{/modal-dialog}}

@@ -1,0 +1,21 @@
+<div class="table-responsive col-md-10">
+	<table class="table">
+		<thead>
+			<tr>
+				<th class="col-sm-8">Name</th>
+				<th class="col-sm-2">Servings</th>
+				<th class="col-sm-2"></th>
+			</tr>
+		</thead>
+		<tbody>
+		{{#each model as |recipe|}}
+			{{recipe-item 
+				recipe=recipe 
+				updateRecipe="updateRecipe" 
+				deleteRecipe="deleteRecipe" 
+				revertRecipe="revertRecipe"
+				showModal="showModal"}}
+		{{/each}}
+		</tbody>
+	</table>
+</div>

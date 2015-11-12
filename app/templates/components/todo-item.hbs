@@ -1,0 +1,5 @@
+<label class="{{if todo.complete 'completed'}}" >
+	{{input type="checkbox" checked=todo.complete}}
+	{{todo.title}}
+</label>
+<button class="btn btn-default" {{action "editTodo"}}><span class="glyphicon glyphicon-cog" ></span></button>
